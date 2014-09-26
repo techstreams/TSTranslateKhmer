@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	<title>TSTranslateKhmer</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/github-markdown.css">
+	<link rel="stylesheet" href="css/main.css">
+	<style>
+		body {
+			min-width: 200px;
+			max-width: 790px;
+			margin: 0 auto;
+			padding: 30px;
+		}
+	</style>
+</head>
+<body>
+
+<article class="markdown-body">
+    <p><i class="fa fa-bullhorn"></i> <a href="#about">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;<i class="fa fa-wrench"></i> <a href="#install">Install</a>&nbsp;&nbsp;|&nbsp;&nbsp;<i class="fa fa-paper-plane-o"></i> <a href="#start">Getting Started</a>&nbsp;&nbsp;|&nbsp;&nbsp;<i class="fa fa-exclamation-circle"></i> <a href="#important">Important Notes</a></p>
+<hr>
+<p><a id="about" name="about" href="#"></a></p>
+<h1><i class="fa fa-bullhorn"></i> TSTranslateKhmer</h1>
+<blockquote>
+<p>TSTranslateKhmer is a demonstration <a href="https://www.google.com/script/start/" target="_blank">Google Apps Script</a> which translates <em>Camodian Khmer</em> to <em>English</em> through a <a href="https://support.google.com/docs/topic/6063584" target="_blank">Google Form</a> using <a href="https://translate.google.com/" target="_blank">Google Translate</a>.  An email is sent to the form owner containing the <em>Khmer</em> text along with the <em>English</em> translation.  </p>
+<p><i class="fa fa-github"></i> <a href="https://github.com/techstreams/TSTranslateKhmer">Project on Github</a></p>
+</blockquote>
+<p><br></p>
+<p><strong><em>For example, the following image shows a simple <a href="https://support.google.com/docs/topic/6063584" target="_blank">Google Form</a> created with TSTranslateKhmer</em></strong></p>
+<p><br>
+<img src="img/form1.png" alt="picture"></p>
+<p><br>
+<br></p>
+<p><strong><em>... translated to Khmer via TSranslateKhmer</em></strong></p>
+<p><br>
+<img src="img/form2.png" alt="picture"></p>
+<p><br>
+<br></p>
+<p><strong><em>... and an email form submission generated and sent by TSranslateKhmer</em></strong></p>
+<p><br>
+<img src="img/email.png" alt="picture"></p>
+<p><br></p>
+<hr>
+<p><a id="install" name="install" href="#"></a></p>
+<h2><i class="fa fa-wrench"></i> Installation</h2>
+<blockquote>
+<p>There are <strong><em>two methods</em></strong> available for installing <em>TSTranslateKhmer</em>.  </p>
+</blockquote>
+<p><br></p>
+<h4><i class="fa  fa-chevron-circle-right"></i> Method 1: Easy Installation with TSScriptCopy</h4>
+<p>TSScriptCopy is an application which <strong><em>automates the process of copying files to your Google Drive.</em></strong></p>
+<p class="red"><em><i class="fa fa-exclamation-circle"></i> TSScriptCopy and its use are licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache License, Version 2.0</a></em></p>
+
+<button><i class="fa fa-thumb-tack"></i> Click for Instructions</button>
+
+<div id="test" class="instructions hidden"><br>
+Follow these instructions to install the <strong><em>TSTranslateKhmer script and host form</em></strong> into your Google Drive with <strong>TSScriptCopy</strong>:<br>
+<br>
+
+<strong><i class="fa  fa-chevron-right"></i> STEP 1:</strong> Login to your <a href="http://drive.google.com/" target="_blank">Google Drive</a><br><br>
+
+<strong><i class="fa  fa-chevron-right"></i> STEP 2:</strong> Click <a href="https://script.google.com/macros/s/AKfycbyvyOdWanBy-3ovr_YirIK9gNR-EYkpdYtbROPi7qgrpABO7H09/exec" target="_blank">TSScriptCopy</a> to access. <strong><em>Wait for the application to load...</em></strong><br>
+<br>
+
+<em>(If you have not run TSScriptCopy before, you will be prompted to perform a <strong>one-time authorization</strong> to allow the application to copy scripts and host documents to your Google Drive.)</em><br>
+<br>
+
+<img src="img/auth1.png" alt="authorization">
+<img src="img/auth2.png" alt="authorization"><br>
+<br>
+<br>
+
+<strong><i class="fa  fa-chevron-right"></i> Step 3:</strong> When the TSScriptCopy page displays in your browser, locate the <strong><em>TSTranslateKhmer Copy to Drive</em></strong> button and click to install<br>
+<br>
+
+<img src="img/copy.png" alt="copy"><br>
+<br>
+<br>
+
+<strong><i class="fa  fa-chevron-right"></i> Step 4:</strong> Wait for TSScriptCopy to copy the <strong>TSTranslateKhmer script and host form</strong> to your Google Drive. <em>The copy process may take a minute to run...</em><br>
+<br>
+
+<img src="img/wait.png" alt="wait"><br>
+<br>
+<br>
+
+<strong><i class="fa  fa-chevron-right"></i> Step 5:</strong> Access and open the <strong>TSTranslateKhmer host form</strong> by clicking the link in the resulting notification message.<br>
+<br>
+
+<img src="img/notification.png" alt="notification"><br>
+<br>
+
+<em>(Click the <strong>Close</strong> link to close the notification...or <strong>exist TSScriptCopy</strong> by closing the associated browser window.)</em>
+
+<br>
+<br>
+
+<strong><i class="fa  fa-chevron-right"></i> Step 5:</strong> To use the script, see the <a href="#start">Getting Started</a> section below.
+
+<br>
+<br>
+
+</div>
+
+<hr class="divider"> 
+
+
+<h4><i class="fa  fa-chevron-circle-right"></i> Method 2: Manual Installation</h4>
+<p>See the <a href="https://github.com/techstreams/TSTranslateKhmer" target="_blank">TSTranslateKhmer project on Github</a> for code and manual install instructions.</p>
+<p></div></p>
+<p><br>  </p>
+<hr>
+<p><a id="start" name="start" href="#"></a></p>
+<h2><i class="fa fa-paper-plane-o"></i> Getting Started</h2>
+<blockquote>
+<p>Get started with <em>TSTranslateKhmer</em> in <em>four</em> easy steps:</p>
+</blockquote>
+<p><br></p>
+<h4><i class="fa  fa-chevron-circle-right"></i> Step 1: Create the Form</h4>
+<button><i class="fa fa-thumb-tack"></i> Click for Instructions</button>
+
+<div class="instructions step hidden"> 
+
+<i class="fa  fa-chevron-right"></i> Locate <em>(and open)</em> the Google Form created during <a href="#install">Install</a>.<br>
+<br>
+
+<i class="fa  fa-chevron-right"></i> Find the <strong>TSTranslateKhmer</strong> menu option in the form toolbar.<br><br>
+
+<img src="img/menu.png" alt="menu">
+
+<br>
+<br>
+
+<i class="fa  fa-chevron-right"></i> Select the <strong><em>TSTranslateKhmer &gt; Create Form</em></strong> menu option.<br>
+<br>
+
+<img src="img/create.png" alt="menu">
+
+<br>
+<br>
+
+<br>
+
+<p class="red"><em>(If you have not run TSTranslateKhmer before, you will be prompted to perform a <strong>one-time authorization</strong> to allow the script access. Follow the prompts and click <strong>Continue</strong> and <strong>Accept</strong> to authorize.)</em></p> 
+
+<br>
+
+<i class="fa  fa-chevron-right"></i> <strong>Once the form has been created</strong> a notification message will show. Click <strong>OK</strong> to dismiss the message.<br>
+<br>
+
+<img src="img/createdone.png" alt="menu">
+
+<br>
+<br>
+
+<i class="fa  fa-chevron-right"></i> Modify the <em><a href="https://support.google.com/docs/answer/145737" target="_blank">form theme</a>, title, description, paragraph text element title and help text</em> as needed.<br><em>See the <a href="https://support.google.com/docs/answer/2839737" target="_blank">documentation</a> for more information.</em><br>
+<br>
+
+<p class="red"><em><i class="fa fa-exclamation-circle"></i> <strong>NOTE:</strong> TSTranslateKhmer was designed to work with only one <a href="https://support.google.com/docs/answer/2839737" target="_blank">form paragraph text element</a>.  No other elements will be translated.</em></p>
+
+</div>
+
+<p><br></p>
+<h4><i class="fa  fa-chevron-circle-right"></i> Step 2: Enable TSTranslateKhmer</h4>
+<button><i class="fa fa-thumb-tack"></i> Click for Instructions</button>
+
+
+<div class="instructions step hidden"> 
+
+<i class="fa  fa-chevron-right"></i> Select the <strong><em>TSTranslateKhmer &gt; Enable Submit Trigger</em></strong> menu option.<br>
+<br>
+
+<img src="img/enable.png" alt="live form"><br>
+<br>
+<br>
+
+<i class="fa  fa-chevron-right"></i> <strong>Once the script trigger is enabled</strong> a notification message will show. Click <strong>OK</strong> to dismiss the message.<br>
+<br>
+
+<img src="img/enabledone.png" alt="live form"><br>
+<br>
+<br>
+
+</div>
+
+<p><br></p>
+<h4><i class="fa  fa-chevron-circle-right"></i> Step 3: Translate Form Text to Khmer</h4>
+<button><i class="fa fa-thumb-tack"></i> Click for Instructions</button>
+
+<div class="instructions step hidden"> 
+
+<i class="fa  fa-chevron-right"></i> Select the <strong><em>TSTranslateKhmer &gt; Utilities &gt; Translate Form Text to Khmer</em></strong> menu option.<br>
+<br>
+
+<img src="img/khmer.png" alt="live form"><br>
+<br>
+<br>
+
+<em>This will translate the form text into Khmer.</em><br>
+<br>
+
+<img src="img/khmerform.png" alt="live form"> 
+<br> 
+<br>
+
+<p class="red"><em><i class="fa fa-exclamation-circle"></i> <strong>NOTE:</strong> Some built-in Google Form text will not be translated by TSTranslateKhmer.</em></p>
+
+<br>
+<br>
+
+<i class="fa  fa-chevron-right"></i> <strong>Once the form text has been translated</strong> a notification message will show. Click <strong>OK</strong> to dismiss the message.<br>
+<br>
+
+<img src="img/khmerdone.png" alt="live form"><br>
+<br>
+<br>
+
+<p class="red"><em><i class="fa fa-exclamation-circle"></i> <strong>NOTE:</strong> If the form users are using a browser such as <a href="https://www.google.com/intl/en-US/chrome/browser/" target="_blank">Chrome</a> which will automatically translate the live form when they view it, you can leave the form in English.</em></p>
+
+<br>
+
+<strong>To translate the form back to English...</strong><br>
+<br>
+
+<i class="fa  fa-chevron-right"></i> Select the <strong><em>TSTranslateKhmer &gt; Utilities &gt; Translate Form Text to English</em></strong> menu option.<br>
+<br>
+
+<img src="img/english.png" alt="live form"><br>
+<br>
+<br>
+
+<p class="red"><em><i class="fa fa-exclamation-circle"></i> <strong>NOTE:</strong> Using TSTranslateKhmer to translate Khmer form text back to English may alter the original English text.</em></p>
+
+
+</div>
+
+<p><br></p>
+<h4><i class="fa  fa-chevron-circle-right"></i> Step 4: Publish Form</h4>
+<button><i class="fa fa-thumb-tack"></i> Click for Instructions</button>
+
+<div class="instructions step hidden"> 
+
+<i class="fa  fa-chevron-right"></i> View the <strong><em>live form</em></strong> by clicking the <strong>View live form</strong> button on the form toolbar.<br>
+<br>
+<em><strong>The form is now ready to share with others</strong>...see the <strong><a href="https://support.google.com/docs/answer/2839588" target="_blank">form sharing documentation</a></strong> for more information.</em><br>
+<br>
+
+<img src="img/liveform.png" alt="live form"><br>
+<br>
+<br>
+
+<h2>GOOGLE APPS USERS ONLY:</h2>
+
+<br>
+
+<i class="fa  fa-chevron-right"></i> To publish the form, <strong><em>uncheck</em></strong> the <strong><em>Require login to view this form</em></strong> box at the top of the form and click <strong>OK</strong> on the following prompt.<br>
+<br>
+
+<img src="img/publish.png" alt="live form"><br>
+<br>
+<br>
+
+<i class="fa fa-arrow-right"></i> <em><strong>If you want to keep the form accessible only within your Google Apps domain</strong>...leave the <strong>Require login to view this form</strong> checked.</em><br>
+<br>
+
+<img src="img/requirelogin.png" alt="live form"><br>
+<br>
+<br>
+
+<i class="fa fa-arrow-right"></i> <em><strong>If you want to keep the form accessible only within your Google Apps domain AND collect the respondent’s username</strong>...check the <strong>Automatically collect respondent’s username</strong> box. The form submission email will contain the respondent’s username in addition to the form submission content.</em><br>
+<br>
+
+<img src="img/autocollect.png" alt="live form"><br>
+<br>
+<br>
+
+</div>
+
+<p><br></p>
+<hr>
+<p><a id="about" name="important" href="#"></a></p>
+<h2><i class="fa fa-exclamation-circle"></i> Important Notes About TSTranslateKhmer</h2>
+<ul>
+<li><p>The Khmer text portion of the email may only be viewable in certain browsers such as <strong><a href="https://www.google.com/intl/en-US/chrome/browser/" target="_blank">Chrome</a></strong>.  <strong><em>Other desktop or mobile browsers may not display the Khmer text.</em></strong></p>
+</li>
+<li><p>Google Apps Scripts are subject to daily quota limits including the number of emails sent.   See the <em>Quota Limits</em> tab of the <a href="https://docs.google.com/macros/dashboard" target="_blank">Google Apps Script Dashboard</a> for more information.</p>
+</li>
+<li><p>TSTranslateKhmer may not be appropriate for high traffic forms, especially in cases where the form owner consistently receives quota limit exceeded notifications.  </p>
+</li>
+</ul>
+<p><br></p>
+<hr>
+
+    
+	    <p>&copy; 2014 <a href="https://github.com/techstreams" target="_blank">Laura Taylor</a>&nbsp;&nbsp;|&nbsp;&nbsp;Released under <a href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">Apache License, Version 2.0</a></p> 
+        <p class="smaller">Documentation:  Built with <a href="http://harpjs.com" target="_blank">Harp</a>.&nbsp;&nbsp;|&nbsp;&nbsp;Hosted on <a href="https://pages.github.com/" target="_blank">Github Pages</a>.<br><em>Last Updated: Fri Sep 26 2014</em></p>
+	
+<script src="js/main.js"></script>
+</body>
+</html>
