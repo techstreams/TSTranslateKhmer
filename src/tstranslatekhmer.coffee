@@ -67,6 +67,13 @@
   FormApp.getUi().alert('Form text has been translated to English.');
 }`
 
+###
+ * Show About Information
+###
+`function about() {
+  FormApp.getUi().showModelessDialog(HtmlService.createHtmlOutputFromFile('about'), ' ');
+}`
+
 
 ###
  * Process form response

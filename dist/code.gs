@@ -69,6 +69,13 @@ function translateToEnglish() {
 };
 
 /*
+ * Show About Information
+ */
+function about() {
+  FormApp.getUi().showModelessDialog(HtmlService.createHtmlOutputFromFile('about'), ' ');
+};
+
+/*
  * Process form response
  * @param {object} form submit trigger event
  */
