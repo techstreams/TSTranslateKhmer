@@ -1,6 +1,6 @@
 #  TSTranslateKhmer
 
-Demonstration [Google Apps Script](https://www.google.com/script/start/) which translates *Camodian Khmer* to *English* through a [Google Form](https://support.google.com/docs/topic/6063584) using [Google Translate](https://translate.google.com/).  An email is sent to the form owner containing the *Khmer* text along with the *English* translation.  
+Demonstration [Google Apps Script](https://www.google.com/script/start/) which translates *Cambodian Khmer* to *English* through a [Google Form](https://support.google.com/docs/topic/6063584) using [Google Translate](https://translate.google.com/).  An email is sent to the form owner containing the *Khmer* text along with the *English* translation.  
 
 
 ## Install
