@@ -5,18 +5,15 @@
 
 ## Install
 
-There are **two** methods available for installing TSTranslateKhmer.
+> There are **two** methods available for installing TSTranslateKhmer.  
 
----
 
 #### Method #1:  TSScriptCopy Application Install
 
 See the [TSTranslateKhmer documentation](http://techstreams.github.io/TSTranslateKhmer) for TSScriptCopy installation instructions.
 
-*NOTE: The TSScriptCopy application is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)*
+*NOTE: The TSScriptCopy application is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)*  
 
-
----
 
 
 #### Method #2:  Manual Install
@@ -41,7 +38,10 @@ See the [TSTranslateKhmer documentation](http://techstreams.github.io/TSTranslat
 
 * Close the script editor and reload the form in your browser
 
-* To use the script, see the [TSTranslateKhmer documentation](http://techstreams.github.io/TSTranslateKhmer)
+* To use the script, see the [TSTranslateKhmer documentation](http://techstreams.github.io/TSTranslateKhmer)  
+
+
+---
 
 
 ## Usage
@@ -54,7 +54,10 @@ See the [TSTranslateKhmer documentation](http://techstreams.github.io/TSTranslat
 
 * Google Apps Scripts are subject to daily quota limits including the number of emails sent.   See the *Quota Limits* tab of the [Google Apps Script Dashboard](https://docs.google.com/macros/dashboard) for more information.
 
-* TSTranslateKhmer may not be appropriate for high traffic forms, especially in cases where the form owner consistently receives quota limit exceeded notifications.
+* TSTranslateKhmer may not be appropriate for high traffic forms, especially in cases where the form owner consistently receives quota limit exceeded notifications.  
+
+
+---
 
 
 ## Contributing to this project
@@ -63,7 +66,10 @@ Contributions are welcome. Please take a moment to review the [guidelines for co
 
 * [Bug reports](CONTRIBUTING.md#bug-reports)
 * [Feature requests](CONTRIBUTING.md#feature-requests)
-* [Pull requests](CONTRIBUTING.md#pull-requests)
+* [Pull requests](CONTRIBUTING.md#pull-requests)  
+
+
+---
 
 
 ## Developer Notes
@@ -104,7 +110,10 @@ $ gulp
 $ gulp dev
 ```
 
-You can find gulp tasks in the [gulpfile](gulpfile.coffee).
+You can find gulp tasks in the [gulpfile](gulpfile.coffee).  
+
+
+---
 
 
 ## License
