@@ -1,6 +1,6 @@
 {
   "name": "TSTranslateKhmer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Google Apps Script for Google Forms which translates Cambodian Khmer to English.",
   "author": "Laura Taylor",
   "license": "Apache License, Version 2.0",
