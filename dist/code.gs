@@ -82,7 +82,7 @@ function about() {
 function checkResponses(e) {
   var tstk;
   try {
-    tstk = new TSTranslateKhmer(FormApp.getActiveForm(), e.response).sendEmail(); 
+    tstk = new TSTranslateKhmer(FormApp.getActiveForm(), e.response).sendEmail();
   } catch(error) {
     // Send errors to owner
     MailApp.sendEmail(Session.getEffectiveUser().getEmail(), 'TSTranslateKhmer: Error processing form submission', error.message);
@@ -150,20 +150,6 @@ function checkResponses(e) {
 
 
     /*
-    * Translate text
-    * @return {TSTranslateKhmer} this object for chaining
-     */
-
-    TSTranslateKhmer.prototype.sendEmail = function() {
-      this.generateFormResponseMeta_();
-      if (this.meta) {
-        this.sendEmail_();
-      }
-      return this;
-    };
-
-
-    /*
     * Set a form trigger for processing form responses
     * @param {string} function name to be run on trigger
     * @return {TSTranslateKhmer} this object for chaining
@@ -195,16 +181,15 @@ function checkResponses(e) {
         this.form.setConfirmationMessage(LanguageApp.translate(this.form.getConfirmationMessage(), from, to));
       }
       children = this.form.getItems();
-      children.forEach((function(_this) {
-        return function(item) {
-          if (item.getTitle() && item.getTitle() !== '') {
-            item.setTitle(LanguageApp.translate(item.getTitle(), from, to));
-          }
-          if (item.getHelpText() && item.getHelpText() !== '') {
-            return item.setHelpText(LanguageApp.translate(item.getHelpText(), from, to));
-          }
-        };
-      })(this));
+      children.forEach(function(item) {
+        if (item.getTitle() && item.getTitle() !== '') {
+          item.setTitle(LanguageApp.translate(item.getTitle(), from, to));
+        }
+        if (item.getHelpText() && item.getHelpText() !== '') {
+          item.setHelpText(LanguageApp.translate(item.getHelpText(), from, to));
+        }
+        return null;
+      });
       return this;
     };
 

@@ -82,7 +82,7 @@
 `function checkResponses(e) {
   var tstk;
   try {
-    tstk = new TSTranslateKhmer(FormApp.getActiveForm(), e.response).sendEmail(); 
+    tstk = new TSTranslateKhmer(FormApp.getActiveForm(), e.response).sendEmail();
   } catch(error) {
     // Send errors to owner
     MailApp.sendEmail(Session.getEffectiveUser().getEmail(), 'TSTranslateKhmer: Error processing form submission', error.message);
@@ -144,19 +144,6 @@ do ->
       @
 
     ###
-    * Translate text
-    * @return {TSTranslateKhmer} this object for chaining
-    ###
-    sendEmail: ->
-      # Generate an object with form submission data
-      @generateFormResponseMeta_()
-
-      # Send email
-      if @meta
-        @sendEmail_()
-      @
-
-    ###
     * Set a form trigger for processing form responses
     * @param {string} function name to be run on trigger
     * @return {TSTranslateKhmer} this object for chaining
@@ -183,11 +170,12 @@ do ->
       if @form.getConfirmationMessage() and @form.getConfirmationMessage() isnt ''
         @form.setConfirmationMessage(LanguageApp.translate(@form.getConfirmationMessage(), from, to))
       children = @form.getItems()
-      children.forEach (item) =>
+      children.forEach (item) ->
         if item.getTitle() and item.getTitle() isnt ''
           item.setTitle(LanguageApp.translate(item.getTitle(), from, to))
         if item.getHelpText() and item.getHelpText() isnt ''
           item.setHelpText(LanguageApp.translate(item.getHelpText(), from, to))
+        null
       @
 
     # PRIVATE FUNCTIONS
