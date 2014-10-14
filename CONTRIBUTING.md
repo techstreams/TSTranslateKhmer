@@ -7,7 +7,7 @@ _**Note:** These guidelines are adapted from [issue-guidelines](https://github.c
 
 ## Using the issue tracker
 
-The [issue tracker](https://github.com/techstreams/TSTranslatKhmer/issues) is the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests).
+The [issue tracker](https://github.com/techstreams/TSTranslateKhmer/issues) is the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests).
 
 
 ## Bug reports
