@@ -10,7 +10,7 @@
 
 #### Method #1:  TSScriptCopy Application Install
 
-See the [TSTranslateKhmer documentation](http://techstreams.github.io/TSTranslateKhmer) for TSScriptCopy installation instructions.
+See the [TSTranslateKhmer documentation](https://techstreams.github.io/TSTranslateKhmer) for TSScriptCopy installation instructions.
 
 *NOTE: The TSScriptCopy application is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)*  
 
@@ -18,7 +18,7 @@ See the [TSTranslateKhmer documentation](http://techstreams.github.io/TSTranslat
 
 #### Method #2:  Manual Install
 
-* Login to your [Google Drive](http://drive.google.com)
+* Login to your [Google Drive](https://drive.google.com)
 
 * Create a [Google Form](https://support.google.com/docs/topic/6063584)
 
@@ -38,7 +38,7 @@ See the [TSTranslateKhmer documentation](http://techstreams.github.io/TSTranslat
 
 * Close the script editor and reload the form in your browser
 
-* To use the script, see the [TSTranslateKhmer documentation](http://techstreams.github.io/TSTranslateKhmer)  
+* To use the script, see the [TSTranslateKhmer documentation](https://techstreams.github.io/TSTranslateKhmer)  
 
 
 ---
@@ -46,7 +46,7 @@ See the [TSTranslateKhmer documentation](http://techstreams.github.io/TSTranslat
 
 ## Usage
 
-See the [TSTranslateKhmer documentation](http://techstreams.github.io/TSTranslateKhmer)
+See the [TSTranslateKhmer documentation](https://techstreams.github.io/TSTranslateKhmer)
 
 **Important Usage Notes:**
 
