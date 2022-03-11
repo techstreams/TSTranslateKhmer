@@ -16,7 +16,7 @@ Follow these instructions to install the **TSTranslateKhmer** script and host fo
 
 * Login to your [Google Drive](https://drive.google.com/).
 
-* Access the [TSTranslateKhmer form](https://techstreams.page.link/TSTranslateKhmer).
+* Access the [TSTranslateKhmer form](https://docs.google.com/forms/d/16Ss86U6WtZXCHlW8wLjJEJVtw1wR0CBapeekgdvbdXc/template/preview).
 
 * Click the ***Use Template*** button. *This will copy the form to your Google Drive.*
 
